@@ -1,0 +1,6 @@
+# Robots.txt for ZILTON LIFE CARE PRIVATE LIMITED
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ziltonlifecare.com/sitemap.xml

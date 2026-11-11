@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F4F8F5"/>
+      <stop offset="100%" stop-color="#E7EFEA"/>
+    </radialGradient>
+    <linearGradient id="vialGlass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#E8F4EE" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#CBE5D8" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0D9E71" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="cartonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F7FAF8"/>
+      <stop offset="100%" stop-color="#EBF3EE"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#123D32" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Clean Studio Background -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)"/>
+
+  <!-- Radial Floor Reflection & Shadow Platform -->
+  <ellipse cx="200" cy="265" rx="130" ry="16" fill="#1B634E" fill-opacity="0.08"/>
+  <ellipse cx="200" cy="264" rx="80" ry="9" fill="#1B634E" fill-opacity="0.12"/>
+
+  <!-- ── 1. MONOCARTON PACKAGING (BACKGROUND) ── -->
+  <g transform="translate(60, 48)" filter="url(#softShadow)">
+    <!-- Main Carton Box -->
+    <rect x="0" y="0" width="135" height="200" rx="6" fill="url(#cartonGrad)" stroke="#1B634E" stroke-opacity="0.18" stroke-width="1.5"/>
+    <!-- Top Brand Header Band -->
+    <rect x="0" y="0" width="135" height="42" rx="6" fill="#0D9E71"/>
+    <rect x="0" y="36" width="135" height="6" fill="#059669"/>
+    
+    <!-- Rx Symbol -->
+    <text x="14" y="24" font-family="serif" font-size="14" font-weight="bold" font-style="italic" fill="#FFFFFF">Rx</text>
+    <text x="36" y="22" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" letter-spacing="1" fill="#FFFFFF" opacity="0.9">ZILTON LIFE CARE</text>
+    
+    <!-- Carton Product Typography -->
+    <text x="14" y="68" font-family="'Fraunces', serif" font-size="13" font-weight="bold" fill="#1B634E">Glutashape Sachet</text>
+    <text x="14" y="82" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600" fill="#0D9E71">L-Glutamine + Antioxidants</text>
+    <text x="14" y="94" font-family="'Inter', sans-serif" font-size="7" font-weight="500" fill="#6B9484">Immunonutrient Sachet</text>
+    
+    <!-- Formulation Dosage Badge -->
+    <rect x="14" y="106" width="70" height="16" rx="3" fill="#DCEEE4"/>
+    <text x="49" y="117.5" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#1B634E" text-anchor="middle">Nutritional Sachet</text>
+
+    <!-- Storage / Hospital Use Specs -->
+    <line x1="14" y1="134" x2="121" y2="134" stroke="#E2ECE6" stroke-width="1"/>
+    <text x="14" y="146" font-family="'Inter', sans-serif" font-size="6.5" font-weight="500" fill="#3E6958">For Institutional / Hospital Supply</text>
+    <text x="14" y="156" font-family="'Inter', sans-serif" font-size="6.5" font-weight="500" fill="#3E6958">Store per package insert</text>
+    <text x="14" y="166" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#0D9E71">Sterile Lyophilized Preparation</text>
+
+    <!-- Carton Bottom Barcode / Verification -->
+    <g transform="translate(14, 178)" opacity="0.7">
+      <rect x="0" y="0" width="2" height="12" fill="#1B634E"/>
+      <rect x="4" y="0" width="1" height="12" fill="#1B634E"/>
+      <rect x="7" y="0" width="3" height="12" fill="#1B634E"/>
+      <rect x="12" y="0" width="1" height="12" fill="#1B634E"/>
+      <rect x="15" y="0" width="2" height="12" fill="#1B634E"/>
+      <rect x="19" y="0" width="3" height="12" fill="#1B634E"/>
+      <rect x="24" y="0" width="1" height="12" fill="#1B634E"/>
+      <rect x="27" y="0" width="2" height="12" fill="#1B634E"/>
+      <text x="34" y="9" font-family="monospace" font-size="6" fill="#1B634E">ZLC-CALIBRATED</text>
+    </g>
+  </g>
+
+  <!-- ── 2. FOREGROUND PRESENTATION (VIAL / BOTTLE / SACHET) ── -->
+  <!-- Sachet Presentation -->
+  <g transform="translate(205, 75) rotate(6)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="115" height="175" rx="10" fill="#FFFFFF" stroke="#0D9E71" stroke-width="2"/>
+    <!-- Top & Bottom Heat Seals -->
+    <rect x="2" y="2" width="111" height="18" rx="6" fill="#0D9E71"/>
+    <rect x="2" y="155" width="111" height="18" rx="6" fill="#0D9E71"/>
+    <g stroke="#FFFFFF" stroke-width="1" opacity="0.4">
+      <line x1="12" y1="4" x2="12" y2="18"/>
+      <line x1="24" y1="4" x2="24" y2="18"/>
+      <line x1="36" y1="4" x2="36" y2="18"/>
+      <line x1="48" y1="4" x2="48" y2="18"/>
+      <line x1="60" y1="4" x2="60" y2="18"/>
+      <line x1="72" y1="4" x2="72" y2="18"/>
+      <line x1="84" y1="4" x2="84" y2="18"/>
+      <line x1="96" y1="4" x2="96" y2="18"/>
+    </g>
+    <!-- Sachet Label Text -->
+    <text x="14" y="44" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#0D9E71">ZILTON LIFE CARE</text>
+    <text x="14" y="66" font-family="'Fraunces', serif" font-size="14" font-weight="bold" fill="#1B634E">Glutashape Sachet</text>
+    <text x="14" y="80" font-family="'Inter', sans-serif" font-size="8" font-weight="600" fill="#059669">L-Glutamine + Antioxidants</text>
+    <text x="14" y="94" font-family="'Inter', sans-serif" font-size="7.5" font-weight="500" fill="#3E6958">Nutritional Sachet</text>
+    <rect x="14" y="104" width="87" height="20" rx="3" fill="#DCEEE4"/>
+    <text x="57" y="117" font-family="'Inter', sans-serif" font-size="7" font-weight="700" fill="#1B634E" text-anchor="middle">THERAPEUTIC NUTRITION</text>
+    <text x="14" y="142" font-family="'Inter', sans-serif" font-size="6.5" fill="#6B9484">Oral Dietary Supplement</text>
+  </g>
+
+  <!-- Quality Stamp Seal -->
+  <g transform="translate(325, 25)" filter="url(#softShadow)">
+    <circle cx="18" cy="18" r="18" fill="#FFFFFF" stroke="#DCE8E0" stroke-width="1.5"/>
+    <circle cx="18" cy="18" r="15" fill="#DCEEE4"/>
+    <path d="M18 9 L25 12 V18 C25 22 22 25 18 27 C14 25 11 22 11 18 V12 L18 9 Z" fill="#0D9E71"/>
+    <path d="M15 18 L17.5 20.5 L21.5 15.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="18" y="32" font-family="'Inter', sans-serif" font-size="5" font-weight="700" fill="#1B634E" text-anchor="middle">ASSURED</text>
+  </g>
+</svg>

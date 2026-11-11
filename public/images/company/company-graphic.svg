@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgMesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFF1E9"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#F2F7F4"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#123D32" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Card Background Frame -->
+  <rect width="540" height="400" rx="24" fill="url(#bgMesh)" stroke="#E4EBE6" stroke-width="2"/>
+
+  <!-- Geometric Grid & Network Lines -->
+  <g stroke="#07845E" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.18">
+    <line x1="80" y1="80" x2="460" y2="80"/>
+    <line x1="80" y1="200" x2="460" y2="200"/>
+    <line x1="80" y1="320" x2="460" y2="320"/>
+    <line x1="140" y1="40" x2="140" y2="360"/>
+    <line x1="270" y1="40" x2="270" y2="360"/>
+    <line x1="400" y1="40" x2="400" y2="360"/>
+  </g>
+
+  <!-- Network Hub 1: Partner cGMP Manufacturing -->
+  <g transform="translate(60, 110)" filter="url(#boxShadow)">
+    <rect width="180" height="180" rx="20" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <circle cx="90" cy="65" r="32" fill="#DFF1E9"/>
+    <!-- Factory / Cleanroom Icon -->
+    <path d="M72 80 V55 L84 65 V55 L96 65 V55 L108 65 V80 H72 Z" fill="#07845E"/>
+    <rect x="76" y="70" width="8" height="10" fill="#ffffff"/>
+    <rect x="96" y="70" width="8" height="10" fill="#ffffff"/>
+    <text x="90" y="125" font-family="sans-serif" font-size="13" font-weight="700" fill="#123D32" text-anchor="middle">Audited cGMP</text>
+    <text x="90" y="142" font-family="sans-serif" font-size="11" font-weight="500" fill="#07845E" text-anchor="middle">Production Partners</text>
+    <rect x="50" y="152" width="80" height="18" rx="9" fill="#DFF1E9"/>
+    <text x="90" y="164.5" font-family="sans-serif" font-size="9" font-weight="700" fill="#07845E" text-anchor="middle">BATCH TESTED</text>
+  </g>
+
+  <!-- Center Pulse Connection Arrow -->
+  <g transform="translate(245, 185)">
+    <circle cx="25" cy="15" r="22" fill="#07845E"/>
+    <!-- Arrow Right -->
+    <path d="M20 15 H30 M26 10 L31 15 L26 20" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Network Hub 2: Nationwide Healthcare Supply -->
+  <g transform="translate(300, 110)" filter="url(#boxShadow)">
+    <rect width="180" height="180" rx="20" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <circle cx="90" cy="65" r="32" fill="#DFF1E9"/>
+    <!-- Hospital / Medical Cross Icon -->
+    <path d="M90 48 V82 M73 65 H107" stroke="#07845E" stroke-width="7" stroke-linecap="round"/>
+    <text x="90" y="125" font-family="sans-serif" font-size="13" font-weight="700" fill="#123D32" text-anchor="middle">Institutional Supply</text>
+    <text x="90" y="142" font-family="sans-serif" font-size="11" font-weight="500" fill="#07845E" text-anchor="middle">ICUs &amp; Hospitals</text>
+    <rect x="45" y="152" width="90" height="18" rx="9" fill="#DFF1E9"/>
+    <text x="90" y="164.5" font-family="sans-serif" font-size="9" font-weight="700" fill="#07845E" text-anchor="middle">PAN-INDIA REACH</text>
+  </g>
+
+  <!-- Bottom Brand Footnote Pill -->
+  <g transform="translate(145, 330)">
+    <rect width="250" height="36" rx="18" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <circle cx="24" cy="18" r="6" fill="#07845E"/>
+    <text x="40" y="22" font-family="sans-serif" font-size="11" font-weight="600" fill="#123D32">
+      ZILTON LIFE CARE PRIVATE LIMITED
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+.DS_Store
+.env
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+# Vercel
+/.vercel/
+
+# Nested archive folder
+Pharma_Website-main/
+
+# Temporary test screenshots
+docs/screenshots/

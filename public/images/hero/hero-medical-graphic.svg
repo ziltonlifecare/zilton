@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="heroCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#DFF1E9" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07845E"/>
+      <stop offset="100%" stop-color="#123D32"/>
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#123D32" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Background Ambient Rings -->
+  <circle cx="300" cy="260" r="230" stroke="#07845E" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.14"/>
+  <circle cx="300" cy="260" r="180" stroke="#07845E" stroke-width="1" opacity="0.18"/>
+  <circle cx="300" cy="260" r="120" fill="#DFF1E9" opacity="0.4"/>
+
+  <!-- Molecular Node Lattice (Background Connections) -->
+  <g stroke="#07845E" stroke-width="1.5" opacity="0.22">
+    <line x1="160" y1="120" x2="250" y2="170"/>
+    <line x1="250" y1="170" x2="350" y2="130"/>
+    <line x1="350" y1="130" x2="440" y2="180"/>
+    <line x1="250" y1="170" x2="260" y2="300"/>
+    <line x1="260" y1="300" x2="380" y2="320"/>
+    <line x1="380" y1="320" x2="440" y2="180"/>
+    <line x1="180" y1="360" x2="260" y2="300"/>
+  </g>
+  <!-- Molecular Spheres -->
+  <circle cx="160" cy="120" r="8" fill="#07845E" opacity="0.45"/>
+  <circle cx="350" cy="130" r="6" fill="#07845E" opacity="0.35"/>
+  <circle cx="440" cy="180" r="9" fill="#07845E" opacity="0.55"/>
+  <circle cx="180" cy="360" r="7" fill="#07845E" opacity="0.35"/>
+  <circle cx="380" cy="320" r="8" fill="#07845E" opacity="0.45"/>
+
+  <!-- Central Pharmaceutical Emblem Card -->
+  <g transform="translate(190, 140)" filter="url(#heroShadow)">
+    <rect width="220" height="240" rx="28" fill="url(#heroCardGrad)" stroke="#E4EBE6" stroke-width="2"/>
+    
+    <!-- Central Shield of Integrity -->
+    <path d="M110 40 L160 62 V110 C160 148 138 178 110 190 C82 178 60 148 60 110 V62 L110 40 Z" fill="url(#shieldGrad)"/>
+    
+    <!-- Inner Cross Emblem -->
+    <path d="M110 80 V130 M85 105 H135" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Subtle Star / Sparkle of Purity -->
+    <circle cx="110" cy="105" r="4" fill="#DFF1E9"/>
+    
+    <!-- Verified Quality Ribbon -->
+    <rect x="35" y="200" width="150" height="24" rx="8" fill="#ffffff" stroke="#E4EBE6"/>
+    <text x="110" y="216" font-family="sans-serif" font-size="10" font-weight="700" fill="#07845E" text-anchor="middle" letter-spacing="1">
+      VERIFIED QUALITY
+    </text>
+  </g>
+
+  <!-- Floating Badge 1: Top Left - Critical Care -->
+  <g transform="translate(40, 80)" filter="url(#heroShadow)">
+    <rect width="190" height="60" rx="16" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="36" height="36" rx="10" fill="#DFF1E9"/>
+    <!-- Syringe / Needle Icon -->
+    <path d="M30 20 L38 28 M26 24 L34 32" stroke="#07845E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="22" y1="38" x2="30" y2="30" stroke="#07845E" stroke-width="3" stroke-linecap="round"/>
+    <text x="58" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#123D32">Critical Care</text>
+    <text x="58" y="44" font-family="sans-serif" font-size="10" font-weight="500" fill="#07845E">Parenteral Injectables</text>
+  </g>
+
+  <!-- Floating Badge 2: Top Right - Clinical Nutrition IV -->
+  <g transform="translate(370, 70)" filter="url(#heroShadow)">
+    <rect width="190" height="60" rx="16" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="36" height="36" rx="10" fill="#DFF1E9"/>
+    <!-- Infusion Drop Icon -->
+    <path d="M30 18 C30 18 22 27 22 31 C22 35 25 38 30 38 C35 38 38 35 38 31 C38 27 30 18 30 18 Z" fill="#07845E"/>
+    <text x="58" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#123D32">Nutrition IV</text>
+    <text x="58" y="44" font-family="sans-serif" font-size="10" font-weight="500" fill="#07845E">Infusions &amp; Electrolytes</text>
+  </g>
+
+  <!-- Floating Badge 3: Bottom Right - Cold Chain GDP -->
+  <g transform="translate(360, 390)" filter="url(#heroShadow)">
+    <rect width="200" height="60" rx="16" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="36" height="36" rx="10" fill="#DFF1E9"/>
+    <!-- Snowflake / Temperature Icon -->
+    <path d="M30 18 V42 M18 30 H42 M21 21 L39 39 M21 39 L39 21" stroke="#07845E" stroke-width="2" stroke-linecap="round"/>
+    <text x="58" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#123D32">Cold-Chain GDP</text>
+    <text x="58" y="44" font-family="sans-serif" font-size="10" font-weight="500" fill="#07845E">Integrity Preservation</text>
+  </g>
+
+  <!-- Floating Badge 4: Bottom Left - Nutrition Sachet -->
+  <g transform="translate(50, 380)" filter="url(#heroShadow)">
+    <rect width="180" height="60" rx="16" fill="#ffffff" stroke="#E4EBE6" stroke-width="1.5"/>
+    <rect x="12" y="12" width="36" height="36" rx="10" fill="#DFF1E9"/>
+    <!-- Pill / Sachet Icon -->
+    <rect x="22" y="22" width="16" height="16" rx="4" fill="#07845E"/>
+    <circle cx="30" cy="30" r="3" fill="#ffffff"/>
+    <text x="56" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#123D32">Nutrition Sachet</text>
+    <text x="56" y="44" font-family="sans-serif" font-size="10" font-weight="500" fill="#07845E">Therapeutic Amino Acids</text>
+  </g>
+</svg>
